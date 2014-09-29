@@ -1,0 +1,97 @@
+/* ===================================================================
+  GLOBAL
+=================================================================== */
+
+.lipsum-row:after,
+.lipsum-row:before {
+  content: '';
+  display: table;
+}
+.lipsum-row:after {
+  clear: both;
+}
+.lipsum-row {
+  zoom: 1;
+}
+
+
+/* ===================================================================
+  LIPSUM GENERATOR PREVIEW
+=================================================================== */
+.lipsum-generator-wrapper {
+  position: absolute;
+  left: 0;
+  top: 29px;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  border-top: 1px solid #ddd;
+}
+.lipsum-preview-wrapper {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 221px;
+  position: absolute;
+}
+.lipsum-preview-wrapper h3,
+.lipsum-footer {
+  margin: 0;
+  padding: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+}
+.lipsum-preview-box {
+  padding: 10px;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  overflow: auto;
+}
+
+.lipsum-preview-box-inner ul {
+  list-style-type: disc;
+}
+.lipsum-preview-box-inner ol {
+  list-style-type: decimal;
+}
+.lipsum-preview-box-inner ul,
+.lipsum-preview-box-inner ol {
+  margin-left: 20px;
+}
+
+.lipsum-footer {
+  position: absolute;
+  left: 0;
+  right: 221px;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+}
+
+
+/* ===================================================================
+  LIPSUM GENERATOR SIDEBAR
+=================================================================== */
+.lipsum-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  border-left: 1px solid #ddd;
+  background: #f3f3f3;
+  padding: 10px;
+  overflow: auto;
+}
+.lipsum-sidebar label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.lipsum-sidebar select {
+  display: block;
+}
+.lipsum-sidebar .form-field {
+  margin-bottom: 20px;
+}
